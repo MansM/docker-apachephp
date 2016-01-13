@@ -11,4 +11,5 @@ COPY src/ /var/www/html/
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY web.json /etc/consul.d/web.json
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/local/bin/apache2-foreground"]
+#CMD ["/usr/bin/supervisord"]
